@@ -135,9 +135,11 @@
                                     `);
                                     
                                 })
+                                    
                                 }
                                 else{
                                     $('.searched').remove();
+                                    $( "h3" ).remove('h3');
                                     resultContainer.append(`<h3>No search results for "${inputVal.val()}"</h3>`);
                                     searchGif.css("margin-top","-20px");
                                     searchGif.attr("src" , gifNoResultLocation);
@@ -154,7 +156,7 @@
                                 * reset the value of the form to blank
                                 * other things that you want to add*/
 
-                                // Coded ********************************************
+                                // Coded ********************************************  
                                 inputVal.val('');
                             })
                 
